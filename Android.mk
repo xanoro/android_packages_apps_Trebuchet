@@ -49,7 +49,7 @@ LOCAL_PRIVILEGED_MODULE := true
 
 # Sign the package when not using test-keys
 ifneq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/target/product/security/testkey)
-LOCAL_CERTIFICATE := cyngn-app
+LOCAL_CERTIFICATE := releasekey
 endif
 
 LOCAL_AAPT_FLAGS += --rename-manifest-package com.cyanogenmod.trebuchet
